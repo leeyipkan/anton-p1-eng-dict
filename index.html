@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sunny Class · P1 English Dictation</title>
 <meta name="description" content="Practice for Anton's Primary 1 English dictation, Chapters 5 and 6.">
-<meta name="theme-color" content="#fff8ec">
+<meta name="theme-color" content="#fff7ea">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/app.css">
 </head>
 <body data-page="home">
@@ -25,7 +25,7 @@
       <a href="./" aria-current="page">Home</a>
       <a href="ch5/">Ch 5</a>
       <a href="ch6/">Ch 6</a>
-      <a href="practice/">Practice</a>
+      <a href="play/">Play</a>
       <a href="plan/">Plan</a>
     </nav>
   </div>
@@ -34,8 +34,8 @@
 <main class="wrap">
 
   <section class="hero">
-    <div class="sun" aria-hidden="true">☀️</div>
-    <h1>Dictation <span class="accent">Prep</span></h1>
+    <div class="sun-badge" aria-hidden="true"></div>
+    <h1>Dictation <span class="g">Prep</span></h1>
     <p class="lede">Eight words and eight sentences, two chapters. Ten minutes a day is plenty.</p>
   </section>
 
@@ -54,9 +54,16 @@
     </div>
   </section>
 
+  <section style="margin-top:16px" aria-labelledby="ring-h">
+    <div class="card">
+      <h2 id="ring-h" style="font-size:18px;margin-bottom:12px">How far he has got</h2>
+      <div data-ring></div>
+    </div>
+  </section>
+
   <section aria-labelledby="today-h">
     <h2 id="today-h" style="margin:26px 0 0;font-size:19px">Today's job</h2>
-    <div class="stack" data-today style="margin-top:10px"></div>
+    <div style="margin-top:10px" data-today></div>
   </section>
 
   <section aria-labelledby="go-h">
@@ -70,9 +77,9 @@
         <span class="ico" aria-hidden="true">🦆</span>
         <span><strong>Chapter 6 words</strong><span>Smelly, cute, a duck. The trickier set.</span></span>
       </a>
-      <a class="tile" href="practice/">
-        <span class="ico" aria-hidden="true">🎧</span>
-        <span><strong>Practice test</strong><span>The phone says it, he types it, and it marks itself.</span></span>
+      <a class="tile" href="play/">
+        <span class="ico" aria-hidden="true">🎮</span>
+        <span><strong>Three games</strong><span>Listen and write, build the word, or tap the one you hear.</span></span>
       </a>
       <a class="tile" href="plan/">
         <span class="ico" aria-hidden="true">📅</span>
@@ -98,7 +105,7 @@
 
   <p class="notice warm" style="margin-top:18px">
     The paper pack — word lists, Look–Cover–Write–Check sheets, blank dictation paper and a parent script —
-    is the printable PDF. This site is the same material, on a screen, with sound.
+    is the printable PDF. This site is the same material, on a screen, with a voice.
   </p>
   <div class="btn-row" style="margin-top:12px">
     <a class="btn btn-primary" href="Anton_P1_Dictation_Prep_Pack.pdf" download>📄 Download the printable pack</a>
@@ -114,7 +121,7 @@
     <li><a href="./" aria-current="page"><span aria-hidden="true">🏠</span><span>Home</span></a></li>
     <li><a href="ch5/"><span aria-hidden="true">🦵</span><span>Ch 5</span></a></li>
     <li><a href="ch6/"><span aria-hidden="true">🦆</span><span>Ch 6</span></a></li>
-    <li><a href="practice/"><span aria-hidden="true">🎧</span><span>Practice</span></a></li>
+    <li><a href="play/"><span aria-hidden="true">🎮</span><span>Play</span></a></li>
     <li><a href="plan/"><span aria-hidden="true">📅</span><span>Plan</span></a></li>
   </ul>
 </nav>
