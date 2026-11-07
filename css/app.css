@@ -11,6 +11,10 @@
   --amber: #f59e0b;
   --amber-2: #ea580c;
   --amber-deep: #9a3412;
+  --amber-ink: #b45309;   /* small amber text on cream: 4.72:1 */
+  --amber-btn-1: #d1430d; /* button gradient, both stops clear 4.5:1 with white */
+  --amber-btn-2: #a8390e;
+  --btn-shadow: #8a2f0b;
   --orange: #c2410c;
   --card: #fffdf9;
   --line: #f0dcc0;
@@ -145,7 +149,7 @@ img { max-width: 100%; }
 .nav a:hover { background: #fde9c8; }
 
 .nav a[aria-current="page"] {
-  background: linear-gradient(160deg, var(--amber), var(--amber-2));
+  background: linear-gradient(160deg, var(--amber-btn-1), var(--amber-btn-2));
   color: #fff;
   box-shadow: 0 6px 14px -8px rgba(234, 88, 12, 0.95);
 }
@@ -181,7 +185,7 @@ img { max-width: 100%; }
   padding: 8px 2px 9px;
   font-size: 10.5px;
   font-weight: 800;
-  color: #9a8064;
+  color: #7a6350;
   text-decoration: none;
   position: relative;
 }
@@ -225,7 +229,7 @@ h1 { font-size: clamp(30px, 7.4vw, 46px); letter-spacing: -0.015em; }
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--amber-2);
+  color: var(--amber-ink);
 }
 
 .lede { margin: 7px 0 0; color: var(--ink-soft); }
@@ -278,14 +282,14 @@ h1 { font-size: clamp(30px, 7.4vw, 46px); letter-spacing: -0.015em; }
 .btn:active { transform: translateY(2px); }
 
 .btn-primary {
-  background: linear-gradient(170deg, #fbbf24, var(--amber) 40%, var(--amber-2));
+  background: linear-gradient(170deg, var(--amber-btn-1), var(--amber-btn-2));
   color: #fff;
-  box-shadow: 0 6px 0 #c2410c, 0 16px 26px -14px rgba(194, 65, 12, 0.9);
-  text-shadow: 0 1px 1px rgba(120, 40, 0, 0.25);
+  box-shadow: 0 6px 0 var(--btn-shadow), 0 16px 26px -14px rgba(138, 47, 11, 0.85);
+  text-shadow: 0 1px 1px rgba(90, 30, 0, 0.3);
 }
 
-.btn-primary:hover { background: linear-gradient(170deg, #fcd34d, #f59e0b 40%, #ea580c); }
-.btn-primary:active { box-shadow: 0 3px 0 #c2410c; }
+.btn-primary:hover { filter: brightness(1.08); }
+.btn-primary:active { box-shadow: 0 3px 0 var(--btn-shadow); }
 
 .btn-ghost {
   background: #fff;
@@ -350,7 +354,7 @@ h1 { font-size: clamp(30px, 7.4vw, 46px); letter-spacing: -0.015em; }
 
 .hero h1 .g {
   display: block;
-  background: linear-gradient(100deg, #f59e0b, #ea580c 48%, #dc2626);
+  background: linear-gradient(100deg, #ea580c, #c2410c 55%, #b91c1c);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -387,10 +391,10 @@ h1 { font-size: clamp(30px, 7.4vw, 46px); letter-spacing: -0.015em; }
 
 .date-card .tag {
   margin: 0;
-  font-size: 10px;
+  font-size: 10.5px;
   font-weight: 800;
   letter-spacing: 0.15em;
-  color: var(--amber-2);
+  color: var(--amber-deep);
 }
 
 .date-card .when { font-size: 18.5px; font-weight: 800; margin: 3px 0 2px; font-family: var(--font-head); }
@@ -399,7 +403,7 @@ h1 { font-size: clamp(30px, 7.4vw, 46px); letter-spacing: -0.015em; }
 .countdown {
   display: inline-block;
   margin-top: 9px;
-  background: linear-gradient(160deg, var(--amber), var(--amber-2));
+  background: linear-gradient(160deg, var(--amber-btn-1), var(--amber-btn-2));
   color: #fff;
   border-radius: 999px;
   padding: 3px 13px;
@@ -519,8 +523,8 @@ h1 { font-size: clamp(30px, 7.4vw, 46px); letter-spacing: -0.015em; }
 .word-num {
   font-size: 11px;
   font-weight: 800;
-  color: #fff;
-  background: #d8bd97;
+  color: var(--amber-deep);
+  background: #f0e0c6;
   width: 21px;
   height: 21px;
   border-radius: 50%;
@@ -569,7 +573,7 @@ h1 { font-size: clamp(30px, 7.4vw, 46px); letter-spacing: -0.015em; }
 .word-syll {
   font-size: 12px;
   font-weight: 800;
-  color: var(--amber-2);
+  color: var(--amber-ink);
   letter-spacing: 0.07em;
   margin: 0;
 }
@@ -611,7 +615,7 @@ h1 { font-size: clamp(30px, 7.4vw, 46px); letter-spacing: -0.015em; }
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-.write-input::placeholder { color: #bda78c; }
+.write-input::placeholder { color: #866f55; }
 
 .write-input:focus {
   outline: none;
@@ -628,7 +632,7 @@ h1 { font-size: clamp(30px, 7.4vw, 46px); letter-spacing: -0.015em; }
   padding: 0 17px;
   cursor: pointer;
   color: #fff;
-  background: linear-gradient(160deg, var(--amber), var(--amber-2));
+  background: linear-gradient(160deg, var(--amber-btn-1), var(--amber-btn-2));
   box-shadow: 0 4px 0 #c2410c;
   transition: transform 0.1s ease;
 }
@@ -669,8 +673,8 @@ h1 { font-size: clamp(30px, 7.4vw, 46px); letter-spacing: -0.015em; }
 .sent-item .num {
   font-size: 11px;
   font-weight: 800;
-  color: #fff;
-  background: #d8bd97;
+  color: var(--amber-deep);
+  background: #f0e0c6;
   width: 21px;
   height: 21px;
   border-radius: 50%;
@@ -693,7 +697,7 @@ h1 { font-size: clamp(30px, 7.4vw, 46px); letter-spacing: -0.015em; }
 .plan-table { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 14.5px; }
 
 .plan-table th {
-  background: linear-gradient(160deg, var(--amber), var(--amber-2));
+  background: linear-gradient(160deg, var(--amber-btn-1), var(--amber-btn-2));
   color: #fff;
   text-align: left;
   font-size: 11px;
@@ -710,7 +714,7 @@ h1 { font-size: clamp(30px, 7.4vw, 46px); letter-spacing: -0.015em; }
 .plan-table tr.today td { background: #fff6e0; }
 .plan-table tr.today td:first-child { border-radius: 10px 0 0 10px; }
 .plan-table tr.today td:last-child { border-radius: 0 10px 10px 0; }
-.plan-table td:first-child { font-weight: 800; color: var(--amber-2); white-space: nowrap; }
+.plan-table td:first-child { font-weight: 800; color: var(--amber-ink); white-space: nowrap; }
 .plan-table td.when { font-weight: 800; white-space: nowrap; }
 
 .tick {
@@ -840,7 +844,7 @@ h1 { font-size: clamp(30px, 7.4vw, 46px); letter-spacing: -0.015em; }
 }
 
 .chip[aria-pressed="true"] {
-  background: linear-gradient(160deg, var(--amber), var(--amber-2));
+  background: linear-gradient(160deg, var(--amber-btn-1), var(--amber-btn-2));
   border-color: var(--amber-2);
   color: #fff;
 }
@@ -850,7 +854,7 @@ h1 { font-size: clamp(30px, 7.4vw, 46px); letter-spacing: -0.015em; }
   font-size: 58px;
   font-weight: 800;
   line-height: 1;
-  background: linear-gradient(100deg, #f59e0b, #dc2626);
+  background: linear-gradient(100deg, #ea580c, #dc2626);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
