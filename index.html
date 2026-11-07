@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunny Class · P1 English Dictation</title>
+<meta name="description" content="Practice for Anton's Primary 1 English dictation, Chapters 5 and 6.">
+<meta name="theme-color" content="#fff8ec">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body data-page="home">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./">
+      <span class="brand-mark" aria-hidden="true">☀️</span>
+      <span>Sunny Class<small>Primary 1 English · Dictation</small></span>
+    </a>
+    <p class="coins" data-coins>🪙 0</p>
+    <nav class="nav" aria-label="Main">
+      <a href="./" aria-current="page">Home</a>
+      <a href="ch5/">Ch 5</a>
+      <a href="ch6/">Ch 6</a>
+      <a href="practice/">Practice</a>
+      <a href="plan/">Plan</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="sun" aria-hidden="true">☀️</div>
+    <h1>Dictation <span class="accent">Prep</span></h1>
+    <p class="lede">Eight words and eight sentences, two chapters. Ten minutes a day is plenty.</p>
+  </section>
+
+  <section class="dates" aria-label="Dictation dates">
+    <div class="date-card now">
+      <p class="tag">CHAPTER 5 · CONFIRMED</p>
+      <p class="when">Wednesday 11 November 2026</p>
+      <p class="sub">Eight words + eight sentences</p>
+      <p class="countdown" data-countdown="ch5">…</p>
+    </div>
+    <div class="date-card">
+      <p class="tag">CHAPTER 6 · ESTIMATED</p>
+      <p class="when">Wednesday 25 November 2026</p>
+      <p class="sub">Two weeks after Chapter 5 — confirm with the school</p>
+      <p class="countdown" data-countdown="ch6">…</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="today-h">
+    <h2 id="today-h" style="margin:26px 0 0;font-size:19px">Today's job</h2>
+    <div class="stack" data-today style="margin-top:10px"></div>
+  </section>
+
+  <section aria-labelledby="go-h">
+    <h2 id="go-h" style="margin:26px 0 0;font-size:19px">Where to go</h2>
+    <div class="grid-links">
+      <a class="tile" href="ch5/">
+        <span class="ico" aria-hidden="true">🦵</span>
+        <span><strong>Chapter 5 words</strong><span>An ear, an arm, shoulders — say it, then write it.</span></span>
+      </a>
+      <a class="tile" href="ch6/">
+        <span class="ico" aria-hidden="true">🦆</span>
+        <span><strong>Chapter 6 words</strong><span>Smelly, cute, a duck. The trickier set.</span></span>
+      </a>
+      <a class="tile" href="practice/">
+        <span class="ico" aria-hidden="true">🎧</span>
+        <span><strong>Practice test</strong><span>The phone says it, he types it, and it marks itself.</span></span>
+      </a>
+      <a class="tile" href="plan/">
+        <span class="ico" aria-hidden="true">📅</span>
+        <span><strong>Day-by-day plan</strong><span>What to do on each of the next four days.</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="card" style="margin-top:22px" aria-labelledby="min-h">
+    <h2 id="min-h">Ten minutes, four steps</h2>
+    <p class="lede">This is the whole method. Nothing else is needed.</p>
+    <ol style="margin:12px 0 0;padding-left:22px">
+      <li><strong>Say it.</strong> He says the word out loud before he writes. Dictation is hearing first, letters second.</li>
+      <li><strong>Cover it.</strong> Hand over the word. If he can still see it, he is copying.</li>
+      <li><strong>Write it.</strong> One clean try, no fixing letters halfway.</li>
+      <li><strong>Check it.</strong> Compare letter by letter. Tick or cross honestly, then write the miss three times.</li>
+    </ol>
+    <div class="btn-row" style="margin-top:16px">
+      <a class="btn btn-primary" href="ch5/">Start with Chapter 5</a>
+      <button class="btn btn-ghost" data-print>🖨 Print this page</button>
+    </div>
+  </section>
+
+  <p class="notice warm" style="margin-top:18px">
+    The paper pack — word lists, Look–Cover–Write–Check sheets, blank dictation paper and a parent script —
+    is the printable PDF. This site is the same material, on a screen, with sound.
+  </p>
+  <div class="btn-row" style="margin-top:12px">
+    <a class="btn btn-primary" href="Anton_P1_Dictation_Prep_Pack.pdf" download>📄 Download the printable pack</a>
+  </div>
+
+  <footer class="site-footer">
+    Made from the school dictation sheets, pages 2 and 3. Scores stay on this device.
+  </footer>
+</main>
+
+<nav class="bottom-nav" aria-label="Main">
+  <ul>
+    <li><a href="./" aria-current="page"><span aria-hidden="true">🏠</span><span>Home</span></a></li>
+    <li><a href="ch5/"><span aria-hidden="true">🦵</span><span>Ch 5</span></a></li>
+    <li><a href="ch6/"><span aria-hidden="true">🦆</span><span>Ch 6</span></a></li>
+    <li><a href="practice/"><span aria-hidden="true">🎧</span><span>Practice</span></a></li>
+    <li><a href="plan/"><span aria-hidden="true">📅</span><span>Plan</span></a></li>
+  </ul>
+</nav>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
