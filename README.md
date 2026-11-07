@@ -59,17 +59,25 @@ can fix by himself on the day.
 
 ## Testing
 
-`tools/e2e.mjs` drives real Chrome over the DevTools protocol: 38 checks covering layout at three
-widths, the female-voice choice (with a stubbed speech engine), every word-card path, all three games
-run to a full score, wrong-answer handling, the "Next" button staying hidden until an answer is
-checked, localStorage persistence, every internal link, the print stylesheet and the PDF.
+An end-to-end suite drives real Chrome over the DevTools protocol: 43 checks covering layout at three
+widths, automated WCAG AA contrast for every text style, tap-target size, the female-voice choice
+(with a stubbed speech engine), every word-card path, all three games run to a full score, wrong-answer
+handling, the "Next" button staying hidden until an answer is checked, localStorage persistence, every
+internal link, the print stylesheet and the PDF.
+
+The harness lives in the project's `tools/` folder, one level above this published folder — it is not
+deployed. From the project root:
 
 ```sh
 python -m http.server 8901 --directory site     # then, in another shell:
 node tools/e2e.mjs "C:/Program Files/Google/Chrome/Application/chrome.exe"
+node tools/e2e.mjs "<chrome>" "https://leeyipkan.github.io/anton-p1-eng-dict"   # against production
 ```
 
 `tools/shots.mjs` and `tools/states.mjs` capture screenshots of each page and each in-play state.
+
+Note: the suite disables the browser cache on purpose. Without that, a reused Chrome profile happily
+serves the previous deploy's CSS and the run reports yesterday's result.
 
 ## Notes
 
